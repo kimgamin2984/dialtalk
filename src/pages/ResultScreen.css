@@ -1,0 +1,108 @@
+.result-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.result-screen__body {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.result-block__eyebrow {
+  margin: 0;
+  font-size: var(--fs-caption);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-ink-soft);
+}
+
+.result-block__eyebrow--light {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.result-block__text {
+  margin: 0;
+  font-size: var(--fs-result);
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--color-ink);
+  background: var(--color-bg-sea);
+  border-radius: var(--radius-m);
+  padding: 18px 20px;
+  word-break: keep-all;
+}
+
+.result-block--translation {
+  background: var(--color-navy);
+  border-radius: var(--radius-m);
+  padding: 18px 20px 20px;
+  gap: 10px;
+}
+
+.result-block__text--light {
+  background: transparent;
+  color: #fff;
+  padding: 0;
+}
+
+.tts-button {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--fs-caption);
+  min-height: var(--tap-min);
+}
+
+.result-screen__loading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: var(--fs-body);
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  padding: 24px 4px;
+}
+
+.spinner {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-navy);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.result-screen__confidence {
+  align-self: flex-start;
+  font-size: var(--fs-caption);
+  font-weight: 700;
+  color: var(--color-success);
+  background: var(--color-success-bg);
+  padding: 6px 14px;
+  border-radius: 999px;
+}

@@ -1,0 +1,40 @@
+.reconfirm-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 28, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 20;
+}
+
+.reconfirm-card {
+  width: 100%;
+  background: var(--color-warn-bg);
+  border: 2px solid var(--color-marker);
+  border-radius: var(--radius-m);
+  padding: 24px;
+  box-shadow: var(--shadow-pop);
+}
+
+.reconfirm-card__title {
+  margin: 0 0 12px;
+  font-size: var(--fs-body-lg);
+  font-weight: 800;
+  color: var(--color-marker-deep);
+}
+
+.reconfirm-card__question {
+  margin: 0 0 20px;
+  font-size: var(--fs-result);
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1.4;
+}
+
+.reconfirm-card__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
