@@ -1,0 +1,19 @@
+.waveform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 64px;
+}
+
+.waveform__bar {
+  width: 6px;
+  min-height: 10px;
+  border-radius: 4px;
+  background: var(--color-navy);
+  transition: height 70ms ease;
+}
+
+.waveform--active .waveform__bar {
+  background: var(--color-marker);
+}

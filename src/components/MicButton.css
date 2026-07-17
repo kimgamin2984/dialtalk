@@ -1,0 +1,51 @@
+.mic-button-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+
+.mic-button {
+  position: relative;
+  width: var(--tap-mic);
+  height: var(--tap-mic);
+  border-radius: 50%;
+  background: var(--color-navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-pop);
+  transition: transform 120ms ease, background 150ms ease;
+  z-index: 1;
+}
+
+.mic-button:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.mic-button:disabled {
+  background: #b9c2c9;
+  box-shadow: none;
+}
+
+.mic-button--recording {
+  background: var(--color-marker);
+}
+
+.mic-button__ring {
+  position: absolute;
+  width: var(--tap-mic);
+  height: var(--tap-mic);
+  border-radius: 50%;
+  border: 3px solid var(--color-marker);
+  opacity: 0.55;
+  transition: transform 90ms linear;
+}
+
+.mic-button__label {
+  font-size: var(--fs-body);
+  font-weight: 600;
+  color: var(--color-ink);
+}

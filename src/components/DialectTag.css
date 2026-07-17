@@ -1,0 +1,50 @@
+.dialect-tag {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--color-amber);
+  color: var(--color-navy-deep);
+  padding: 14px 18px 14px 26px;
+  border-radius: var(--radius-tag);
+  border: 2px solid var(--color-navy-deep);
+  transform: rotate(-1.4deg);
+  max-width: 100%;
+  box-shadow: var(--shadow-card);
+}
+
+.dialect-tag::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: -14px;
+  width: 2px;
+  height: 14px;
+  background: var(--color-navy-deep);
+}
+
+.dialect-tag__hole {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-navy-deep);
+}
+
+.dialect-tag__label {
+  font-family: var(--font-tag);
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.75;
+}
+
+.dialect-tag__text {
+  font-family: var(--font-tag);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}

@@ -1,0 +1,55 @@
+.dialog-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dialog-screen__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+  text-align: center;
+}
+
+.dialog-screen__status {
+  font-size: var(--fs-body-lg);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.dialog-screen__error {
+  color: var(--color-marker-deep);
+  font-weight: 700;
+  font-size: var(--fs-caption);
+}
+
+.dialog-screen__transcript {
+  min-height: 72px;
+  width: 100%;
+  font-size: var(--fs-body-lg);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-ink);
+  background: var(--color-bg-sea);
+  border-radius: var(--radius-m);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: keep-all;
+}
+
+.dialog-screen__transcript-hint {
+  color: var(--color-ink-soft);
+  font-size: var(--fs-body);
+  font-weight: 400;
+}
+
+.dialog-screen__footer {
+  padding: 20px;
+}
